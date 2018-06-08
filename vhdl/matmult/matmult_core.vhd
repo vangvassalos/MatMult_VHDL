@@ -19,7 +19,7 @@ architecture behave of matmult_core is
     signal r_B      : t_in_col                  := (others => (others => '0'));
     signal r_C      : unsigned(31 downto 0)     := (others => '0');
     
-    signal r_CNT    : integer  range 0 to t_in_col'length-1;
+    signal r_CNT    : integer  range 0 to t_in_col'length+1;
     
 begin
 

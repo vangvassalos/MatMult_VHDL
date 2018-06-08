@@ -2,13 +2,6 @@ library ieee;
 use ieee.std_logic_1164.ALL;
 use ieee.numeric_std.all;
 use work.matmult_pkg.all;
-
-Library UNISIM;
-use UNISIM.vcomponents.all;
-
-Library UNIMACRO;
-use UNIMACRO.vcomponents.all;
-
  
 entity matmult_tb is
 end matmult_tb;
@@ -60,7 +53,7 @@ begin
 
     -- Check Result
     if w_RESULT = ((std_logic_vector(y+3),std_logic_vector(y+3),std_logic_vector(y+3)),(std_logic_vector(y+3),std_logic_vector(y+3),std_logic_vector(y+3)),(std_logic_vector(y+3),std_logic_vector(y+3),std_logic_vector(y+3))) then
-        report "SUCESS";
+        report "SUCCESS";
         s <= s + 1;
     else
         report "FAILURE";
@@ -74,7 +67,7 @@ begin
     
     -- Check Result
     if w_RESULT = ((std_logic_vector(y+18),std_logic_vector(y+18),std_logic_vector(y+18)),(std_logic_vector(y+18),std_logic_vector(y+18),std_logic_vector(y+18)),(std_logic_vector(y+18),std_logic_vector(y+18),std_logic_vector(y+18))) then
-        report "SUCESS";
+        report "SUCCESS";
         s <= s + 1;
     else
         report "FAILURE";
